@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz Application</string>
+    <string name="big_o_notes_string">Big O Notes</string>
+    <string name="bigonote">
+        <b>Time Complexity</b>\n
+
+       A measure of how fast an algorithm runs, time complexity is a central concept in the field of
+        algorithms and in coding interviews. It is expressed using <b>Big O</b> notation
+        \n
+        <b>Space Complexity</b>\n
+
+        A measure of how much auxiliary memory an algorithm takes up, space complexity is central
+        concept in the field of algorithms and in coding interviews. It is expressed using <b>Big O</b>
+        notation
+\n
+        \n
+
+<b>Big O Notation</b>
+\n
+The notation used to describe the <b>time complexity</b> and <b>space complexity</b> of algorithms
+\n
+Variables used in Big O notation denote the sizes of inputs to algorithm. For example, <b>O(n)</b>
+        might be the time complexity of an algorithm that traverses through an array of length
+        <b>n</b>; similarly, <b>O(n+m)</b> might be the time complexity of an algorithm that
+        traverses through an array of length <b>n</b> and through a string of length <b>m</b>
+\n
+The following are examples of common complexities and their Big O notations, ordered from fastest to
+        slowest:
+\n
+- <b>Constant: </b> O(1) \n
+- <b>Logarithmic: </b> O(log(n)) \n
+- <b>Linear: </b> O(n) \n
+- <b>Log-linear: </b> O(nlog(n)) \n
+- <b>Quadratic: </b> O(n^2) \n
+- <b>Cubic: </b> O(n^3) \n
+- <b>Exponential: </b> O(2^n) \n
+- <b>Factorial: </b> O(n!) \n
+
+        \n
+        Note that in the context of coding interviews, Big O notation is usually understood to
+        describe the <b>worst-case</b> complexity of an algorithm, even though the worst-case
+        complexity might differ from the <b>average-case</b> complexity. \n
+
+        For Example, some sorting algorithm have different time complexities depending on the layout
+        of elements in their input array. In rare cases, their time complexity will be much
+        worse than in more common cases. Similarly, an algorithm that takes in a string and
+        proforms special operations on uppercase characters might have a different time
+        complexity when run on an input string of only uppercase characters vs on an
+        input string with just a few uppercase characters.\n\n
+
+        Thus, when describing the time complexity of an algorithm, it can sometimes be helpful
+        to specify wheather the time complexity refers to the average case or to the worst
+        case (e.g "This algorithm runes in O(nlog(n)) time on average and in O(n^2) time in the worst case"). \n\n
+
+        Source: AlgoExpert
+
+
+
+</string>
+
+    <string name="interviewnotes">
+    <b>1. Prepare a 30-second to 1-minute elevator pitch for the “tell me about yourself” question and
+        examples/stories for other interview questions</b>
+        \n
+
+        It’s important that you go prepared to talk about non-coding topics like your employment
+        history, career goals, past projects, etc. The technical interview could just be one part
+        of many if you’re at a company with a long interview process, and you’ll probably have to
+        answer some version of this question when you meet new interviewers. It’s a great time to
+        demonstrate soft skills and passion.
+        \n \n
+
+Its also a good idea to prepare some real-life examples and anecdotes/stories ahead of your
+        interview. Doing this can help you prepare for pretty much any behavioral or situational
+        interview question. This works because if you have some examples/stories ready to go, you
+        can apply them to nearly any interview question — which is important because you can’t
+        really prepare for every <i>single</i> software developer interview question you might come
+        across.
+        \n \n \n
+
+        <b>2. Before you go, study up on the most important CS fundamentals</b>
+        \n
+        Don’t stress yourself out like you’re cramming for an exam and trying to learn
+        everything–but do dedicate extra preparation time to key technical interview skills.
+        \n
+        <i>Refer to the notes provided in the App</i>
+\n \n \n
+
+    <b>3. Pick one programming language and know it really well</b>
+        \n
+        Here’s one of the “do this before you land the technical interview” tips: specialize.
+        You should know at least one programming language really well, preferably C++, Java,
+        Ruby, Python, Go, or C.
+        \n \n \n
+
+        <b>4. Do regular coding challenges/smart practice</b>
+        \n
+        During your coding interview preparation, it’s important to study the right way.
+        Start early so you don’t have to cram. How early? It will depend on your level of
+        experience, how many hours per day/week you can dedicate to studying, and how soon
+        your interview is, but if possible, start preparing before you even have a tech interview
+        scheduled. 4-8 weeks is a good amount of time to aim for.
+        \n \n
+
+    If you can dedicate 1 to 2 hours most nights, you can prepare for
+        a FAANG coding interview in 2 weeks without being completely burned out.
+        Another 2 weeks and you can be prepared for the onsite with more coding,
+        system design, and behavior interviews.
+        \n \n \n
+
+        <b>5. Learn to manage your time effectively</b>
+        \n
+        The more focused and efficient you can be during your tech interview preparation,
+        the better you’ll do when you’re actually in the hot seat. Set a timer when practicing.
+        Aim to finish a problem in about 30-45 minutes (including debugging at the end).
+        \n \n \n
+
+        <b>6. Do mock coding interviews </b>
+        \n
+        Having a technical interview cheat sheet, reading books like “Cracking the Coding Interview,”
+        and doing online coding challenges on sites like Interview Cake are all amazing, but
+        if you want to take it even further, live coding interview preparation might be what
+        you need to really get comfortable and polished.
+        \n \n
+        Source: learntocodewith.me
+
+
+
+    </string>
+    <string name="arraynotes">
+    A Linear collection of data values that are accessible at numbered indices. string at index 0
+    \n \n
+    The following are an arrays standard operations and their corresponding time complexities
+    \n\n
+    - <b>Accessing a value at a given index: </b> O(1) \n
+    - <b> Updating a value at a given index: </b> O(1) \n
+    - <b>Inserting a value at the beginning: </b> O(n) \n
+    - <b>Inserting a value in the middle: </b> O(n) \n
+    - <b>Inserting a value at the end </b> \n
+        - amortized O(1) when dealing with a <b>dynamic array</b> \n
+        - O(n) when dealing with a <b>static array</b> \n \n
+    - <b>Removing a value at the beginning: </b> O(n) \n
+    - <b>Removing a value in the middle: </b> O(n) \n
+    - <b>Removing a value at the end: </b> O(1) \n
+    - <b>Coyping the array: </b> O(n) \n \n
+
+    A static array is an implementation of an array that allocates a fixed amount of memory to be
+    used for storing the arrays values. Appending values to the array therefore involves copying
+    the entire array and allocating new memory for it, accounting for the extra space needed for
+    the newly appended value. This is a linear-time operation. \n \n
+
+    A dynamic array is an implementation of an array that preemptively allocates double that amount of memory needed to
+    store that arrays values. Appending values to the array is a constant-time operation until the
+    allocated memory is filled up, at which point that array is copied and double the memory
+    is once again allocated for it, This implementation leads to an amortized constant-time insertion-at-end
+    operation \n \n
+
+    A lot of popular programming language like JavaScript and Python implement arrays as dynamic arrays.
+    \n \n
+
+    Source: AlgoExpert
+</string>
+
+    <string name="linkedlistnotes">
+        A linked list is a sequence of data structures, which are connected together via links.
+        \n \n
+        Linked List is a sequence of links which contains items. Each link contains a connection
+        to another link. Linked list is the second most-used data structure after array.
+        Following are the important terms to understand the concept of Linked List.
+        \n \n
+        - <b>Link:</b> Each link of a linked list can store a data called an element. \n
+        - <b>Next:</b> Each link of a linked list contains a link to a next link Next. \n
+        - <b>LinkedList: </b> A Linked List contains the connection link to the first link called
+        First. \n \n
+
+        <b>Linked List Representation</b> \n
+        Linked list can be visualized as a chain of nodes, where every node points to the next node. \n \n
+        As per the above illustration, following are the important points to be considered. \n
+        - Linked List contains a link element called first. \n
+        - Each link carries a data field(s) and a link field called next. \n
+        - Each link is linked with its next link using its next link. \n
+        - Last link carries a link as null to mark the end of the list. \n \n
+
+        <b>Types of Linked List</b> \n
+        Following are the various types of linked list. \n
+        - <b>Simple Linked List: </b> Item navigation is forward only. \n
+        - <b>Doubly Linked List: </b> Items can be navigated forward and backward. \n
+        - <b>Circular Linked List: </b> Last item contains link of the first element as next
+        and the first element has a link to the last element as previous \n \n
+
+        <b>Basic Operations</b> \n
+        Following are the basic operations supported by a list. \n
+        -<b>Insertion:</b> Adds an element at the beginning of the list \n
+        -<b>Deletion:</b> Deletes an element at the beginning of the list. \n
+        -<b>Display:</b> Displays the complete list. \n
+        -<b>Search:</b> Searches an element using the given key. \n
+        -<b>Delete:</b> Deletes an element using the given key. \n \n
+
+        Source: Tutorialspoint.com
+
+    </string>
+
+    <string name="hashtablenotes">
+        A <b>hash table</b> organizes data so you can quickly look up values for a given key. \n \n
+
+        <b>Strengths:</b> \n
+        - <b>Fast lookups.</b> Lookups take O(1)O(1) time on average \n
+        - <b>Flexible keys.</b>  Most data types can be used for keys, as long as they are hashable.
+        \n \n
+        <b>Weaknesses</b> \n
+        - <b>Slow worst-case lookups.</b> Lookups take O(n) time in the worst case. \n
+        - <b>Unordered.</b> Keys are not stored in a special order. If you are looking for the
+        smallest key, the largest key, or all the keys in a range, you all need to look through
+        every key to find it. \n
+        - <b>Single-directional lookups. </b> While you can look up the value for a given key in
+         O(1) time, looking up the keys for a given value requires looping through
+        the whole dataset—O(n) time. \n
+        - <b>Not cache-friend</b>  Many hash table implementations use linked lists, which do not
+        put data next to each other in memory. \n \n \n
+
+        <b>In Java</b> \n
+        Java has two hash table classes: HashTable and HashMap.
+        In general, you should use a HashMap.\n
+        While both classes use keys to look up values,
+        there are some important differences, including: \n
+        - A HashTable does not allow null keys or values; a HashMap does. \n
+        - A HashTable is synchronized to prevent multiple threads from accessing it at once;
+        a HashMap is not. \n \n
+
+        <b>Hash maps are built on arrays</b> \n
+
+Arrays are pretty similar to hash maps already. Arrays let you quickly look up the value for a
+        given "key" . . . except the keys are called "indices," and we do not get to pick
+        them—they are always sequential integers (0, 1, 2, 3, etc). \n \n
+
+        Think of a hash map as a "hack" on top of an array to let us use flexible keys instead
+        of being stuck with sequential integer "indices." \n \n
+
+All we need is a function to convert a key into an array index (an integer).
+        That function is called a hashing function. \n \n
+
+        To look up the value for a given key, we just run the key through our hashing function
+        to get the index to go to in our underlying array to grab the value. \n
+How does that hashing method work? There are a few different approaches, and they can get
+        pretty complicated. \n \n \n
+
+        <b>Sets</b> \n
+        A <b>set</b> is like a hash map except it only stores keys, without values. \n \n
+        Sets often come up when we are tracking groups of items—nodes we have visited in a graph,
+        characters we have seen in a string, or colors used by neighboring nodes. Usually, we are
+        interested in whether something is in a set or not. \n \n
+        Sets are usually implemented very similarly to hash maps—using hashing to index into an
+        array—but they do not have to worry about storing values alongside keys. In Java,
+        sets are called "hash sets." They are implemented using hash maps—each member of the set is
+        a key in the hash map with a dummy value that gets ignored. \n \n 
+        
+        Source: Interview Cake
+
+
+    </string>
+
+    <string name="stackqueuenotes">
+       <b> Stack is a container of objects that are inserted and removed according to the last-in
+           first-out (LIFO) principle. </b>\n \n
+        <b>Queue is a container of objects (a linear collection) that are
+            inserted and removed according to the first-in first-out (FIFO) principle.</b>\n \n \n
+
+        <b>Stacks:</b> \n
+        In the pushdown stacks only two operations are allowed: push the item into the stack,
+        and pop the item out of the stack. A stack is a limited access data structure - elements can
+        be added and removed from the stack only at the top. push adds an item to the top of the
+        stack, pop removes the item from the top. A helpful analogy is to think of a stack
+        of books; you can remove only the top book, also you can add a new book on the top. \n \n
+
+        <b>Queue</b> \n
+        An excellent example of a queue is a line of students in the food court of the UC.
+        New additions to a line made to the back of the queue, while removal (or serving) happens
+        in the front. In the queue only two operations are allowed enqueue and dequeue.
+        Enqueue means to insert an item into the back of the queue, dequeue means removing
+        the front item. The picture demonstrates the FIFO access. The difference between
+        stacks and queues is in removing. In a stack we remove the item the most recently
+        added; in a queue, we remove the item the least recently added. \n \n
+
+        <b>FIFO / LILO and LIFO / FILO</b> \n \n
+        Queue: First In First Out (FIFO): The first object into a queue is the first object
+        to leave the queue, used by a queue. \n
+        Stack: Last In First Out (LIFO): The last object into a stack is the
+        first object to leave the stack, used by a stack \n
+        OR \n
+        Stack: Last In First Out (FILO): The First object or item
+        in a stack is the last object or item to leave the stack. \n
+        Queue: Last In First Out (LILO): The last object or item
+        in a queue is the last object or item to leave the queue. \n\ \n \n
+
+        Source: everythingcomputerscience.com
+
+    </string>
+
+    <string name="stringnotes">
+        One of the fundamental data types in Computer Science, strings are stored in <b>memory</b> as
+        <b>arrays</b> of integers, where each character in a given string is mapped to an integer
+        via some character-encoding standard like <b>ASCII</b> \n \n
+        Strings behave much like normal arrays, with the main distinction being that, in most programming languages
+        (C++ is a notable exception), strings are <b>immutable,</b> meaning that they can not be edited after
+        creation. This also means that simple operations like appending a character to a string are more expensive
+        than they might appear. \n \n
+        The canonical example of an operation that is deceptively expensive due to string immutability
+        is the following: \n \n
+
+        string = "this is a string" \n
+        newString = "" \n \n
+
+        for character in string: \n
+        newString += character \n \n
+        The operation above has a time complexity of <b>O(n^2)</b> where n is the length of string,
+        because each addition of a character to newString creates an entirely new string and is itself
+        O(n) operation. Therefore, n O(n) operations are performed, leading to an O(n^2) time-complexity
+        operation overall. \n \n \n
+
+        Source: AlgoExpert
+    </string>
+
+    <string name="binarynotes">
+        A Data structure that consists of nodes, each with some value and pointers to child-nodes,
+        which recursively form <b>subtrees</b> in the tree. \n \n
+
+        The first node in a tree is referred to as the <b>root</b> of the tree, while the nodes at the
+        bottom of a tree (the nodes with no child-nodes) are referred to as <b>leaf nodes</b> or simply
+        <b>leaves</b>. The paths between the root of a tree and its leaves are called <b>branches</b>,
+        and the <b>height</b> of a tree is length of its longest branch. The <b>depth</b> of a tree
+        node is its distance from its trees root; this is also known as the nodes level in the tree. \n \n
+
+        <b>Binary Tree</b> \n
+        A <b>tree</b> whose nodes have up to <b>two</b> child-nodes \n \n
+        The structure of a binary tree is such that many of its operations have a logarithic time complexity, making the
+        binary tree an incredibly attractive and commonly used data structure. \n \n
+
+        <b>K-ary Tree</b> \n
+        A <b>tree</b> whose nodes have to <b>k</b> child-nodes. \n
+        a <b>binary tree</b> is a k-ary tree where <b>k == 2</b>. \n \n
+
+        <b>Pefect Binary Tree</b> \n
+        A <b>binary tree</b> whose interior nodes all have two child-nodes and whose <b>leaf nodes</b>
+        all have the same <b>depth</b>. \n \n
+
+        <b>Complete Binary Tree</b>\n
+        A <b>binary tree</b> thats almost <b>perfect</b>; its interior nodes all have two child-nodes, nit its
+        <b>leaf nodes</b> do not necessarily all have the same <b>depth</b>. Furthermore, the nodes in the last
+        <b>level</b> of a complete binary tree are as far left as possible. \n \n
+
+        <b>Balanced Binary Tree</b> \n
+        A <b>binary tree</b> whose nodes all have left and right subtrees whose heights differ by no more than 1. \n \n
+
+        A balanced binary tree is such that the logarithmic time complexity of its operations is maintained
+        \n \n
+
+        <b>Full Binary Tree</b> \n
+        A <b>binary tree</b> whose nodes all have either two child-nodes or zero child-nodes.
+        \n \n \n
+
+        Source: AlgoExpert
+    </string>
+
+    <string name="recursionnotes">
+    A recursive algorithm is one in which objects are defined in terms
+of other objects of the same type. \n \n
+    <b>Advantages</b> \n
+    -Simplicity of code \n
+    -Easy to understand \n \n
+    <b>Disadvantages</b>\n
+    -Memory \n
+    -Speed \n
+    -Possibly redundant work \n \n
+
+    int add_array(int arr[], unsigned count) \n
+    { \n
+     if (count == 0) \n
+    return 0; \n
+  return arr[count - 1] + add_array(arr, count - 1); \n
+} \n \n
+
+    1. a base case, represented by the if and the return 0, in which the function does not call
+    itself. This handles the case where there are no numbers to add. \n
+    2. a recursive case that breaks the problem down into a smaller version of the original problem
+    together with an addition. In the recursive case, add_array is used to add together count-1
+    items; the count-th item is then added to this result (remember that the n-th item of an array
+    is stored at position n-1). \n \n \n
+
+    Source: Salisbury University.
+
+
+
+</string>
+
+    <string name="inheritnotes">
+       Inheritance is an important pillar of OOP(Object-Oriented Programming).
+        It is the mechanism in java by which one class is allowed to inherit the
+        features(fields and methods) of another class.
+        \n \n
+
+        - <b>Super Class:</b> The class whose features are inherited is known as
+        superclass(or a base class or a parent class).\n
+        - <b>Sub Class:</b>  The class that inherits the other class is known as a
+        subclass(or a derived class, extended class, or child class).
+        The subclass can add its own fields and methods in addition to the
+        fields and methods. \n
+        - <b>Reusability:</b> Inheritance supports the concept of “reusability”, i.e. when we
+        want to create a new class and there is already a class that includes some of the
+        code that we want, we can derive our new class from the existing class.
+        By doing this, we are reusing the fields and methods of the existing class. \n \n \n
+
+        <b>Type of Inheritence in Java</b> \n \n
+
+        <b>1. Single Inheritence:</b> In single inheritance, subclasses inherit the features
+        of one superclass. In the image below, class A serves as a base class for the derived
+        class B. \n
+        <b>2. Multilvel Inheritence:</b> In Multilevel Inheritance, a derived class will be
+        inheriting a base class and as well as the derived class also act as the base class to
+        other class. In the below image, class A serves as a base class for the derived
+        class B, which in turn serves as a base class for the derived class C.
+        In Java, a class cannot directly access the grandparent’s members. \n
+        <b>3. Hierarchical Inheritance:</b> In Hierarchical Inheritance, one class serves as
+        a superclass (base class) for more than one subclass. In the below image, class
+        A serves as a base class for the derived class B, C and D \n
+        <b>4. Multiple Inheritance (Through Interfaces):</b> In Multiple inheritances,
+        one class can have more than one superclass and inherit features from all parent classes.
+        Please note that Java does not support multiple inheritances with classes.
+        In java, we can achieve multiple inheritances only through Interfaces.
+        In the image below, Class C is derived from interface A and B.\n
+        <b>5. Hybrid Inheritance(Through Interfaces):</b> It is a mix of two or more of the above
+        types of inheritance. Since java doesn’t support multiple inheritances with classes,
+        hybrid inheritance is also not possible with classes. In java, we can achieve hybrid
+        inheritance only through Interfaces. \n \n \n
+
+        <b>Important facts about inheritance in Java </b> \n \n
+
+        - <b>Default superclass:</b> Except Object class, which has no superclass, every class
+        has one and only one direct superclass (single inheritance). In the absence of any other
+        explicit superclass, every class is implicitly a subclass of the Object class.\n
+        - <b>Superclass can only be one:</b> A superclass can have any number of subclasses.
+        But a subclass can have only one superclass. This is because Java does not support multiple
+        inheritances with classes. Although with interfaces, multiple inheritances are
+        supported by java. \n
+        - <b>Inheriting Constructors:</b> A subclass inherits all the
+        members (fields, methods, and nested classes) from its superclass.
+        Constructors are not members, so they are not inherited by subclasses,
+        but the constructor of the superclass can be invoked from the subclass. \n
+        - <b>Private member inheritance:</b> A subclass does not inherit the private members of its parent
+        class. However, if the superclass has public or protected methods(like getters and setters)
+        for accessing its private fields, these can also be used by the subclass. \n \n \n
+
+
+        Source: Geeksforgeeks.org
+
+
+    </string>
+
+    <string name="sortingnotes">
+<b>A Sorting Algorithm is used to rearrange a given array or list elements according to a comparison
+    operator on the elements. The comparison operator is used to decide the new order of element
+    in the respective data structure.</b> \n \n
+
+        <b>Selection Sort</b> \n
+        The selection sort algorithm sorts an array by repeatedly finding the minimum element
+        (considering ascending order) from unsorted part and putting it at the beginning.
+        The algorithm maintains two subarrays in a given array. \n
+        1) The subarray which is already sorted \n
+        2) Remaining subarray which is unsorted. \n
+        In every iteration of selection sort, the minimum element (considering ascending order)
+        from the unsorted subarray is picked and moved to the sorted subarray. \n \n
+
+        <b>Bubble Sort</b> \n
+        Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping
+        the adjacent elements if they are in wrong order. \n
+        Example: \n \n
+
+        <b>First Pass:</b> \n
+        ( 5 1 4 2 8 ) –> ( 1 5 4 2 8 ), Here, algorithm compares the first two elements,
+        and swaps since 5 \n
+        >1 \n
+        ( 1 5 4 2 8 ) –>  ( 1 4 5 2 8 ), Swap since 5 > 4 \n
+        ( 1 4 5 2 8 ) –>  ( 1 4 2 5 8 ), Swap since 5 > 2 \n
+        ( 1 4 2 5 8 ) –> ( 1 4 2 5 8 ), Now, since these elements are already in order (8 > 5),
+        algorithm does not swap them. \n
+        <b>Second Pass:</b> \n
+        ( 1 4 2 5 8 ) –> ( 1 4 2 5 8 ) \n
+        ( 1 4 2 5 8 ) –> ( 1 2 4 5 8 ), Swap since 4 > 2 \n
+        ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) \n
+        ( 1 2 4 5 8 ) –>  ( 1 2 4 5 8 ) \n
+        Now, the array is already sorted, but our algorithm does not know if it is completed.
+        The algorithm needs one whole pass without any swap to know it is sorted.\n
+        <b>Third Pass:</b> \n
+        ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) \n
+        ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) \n
+        ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) \n
+        ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) \n \n
+
+        <b>Insertion Sort</b> \n
+        Insertion sort is a simple sorting algorithm that works similar to the way you sort playing
+        cards in your hands. The array is virtually split into a sorted and an unsorted part.
+        Values from the unsorted part are picked and placed at the correct position in the sorted
+        part. \n
+        <b>Algorithm</b>\n
+        To sort an array of size n in ascending order: \n
+        1: Iterate from arr[1] to arr[n] over the array. \n
+        2: Compare the current element (key) to its predecessor. \n
+        3: If the key element is smaller than its predecessor, compare it to the elements before.
+        Move the greater elements one position up to make space for the swapped element. \n
+        Example: \n \n
+
+        12, 11, 13, 5, 6 \n
+        Let us loop for i = 1 (second element of the array) to 4 (last element of the array)
+i = 1. Since 11 is smaller than 12, move 12 and insert 11 before 12 \n
+        11, 12, 13, 5, 6 \n
+        i = 2. 13 will remain at its position as all elements in A[0..I-1] are smaller than 13 \n
+        11, 12, 13, 5, 6 \n
+        i = 3. 5 will move to the beginning and all other elements from 11 to 13 will move one
+        position ahead of their current position. \n
+        5, 11, 12, 13, 6 \n
+        i = 4. 6 will move to position after 5, and elements from 11 to 13 will move one
+        position ahead of their current position. \n
+        5, 6, 11, 12, 13 \n \n \n
+
+        Source: Geeksforgeeks.org
+    </string>
+
+    <string name="TwoDimensionalArraysnotes">
+    <b>Nested Iteration Statements</b> \n
+        In Java, nested iteration statements are iteration statements that appear in the body of
+        another iteration statement. When a loop is nested inside another loop, the inner loop must
+        complete all its iterations before the outer loop can continue. \n \n
+
+        <b>Declaring 2D Arrays</b> \n
+        In Java, 2D arrays are stored as arrays of arrays. Therefore, the way 2D arrays are declared
+        is similar 1D array objects. 2D arrays are declared by defining a data type followed by two
+        sets of square brackets. \n \n
+
+        <b>Accessing 2D Array Elements</b> \n
+        In Java, when accessing the element from a 2D array using arr[first][second], the first
+        index can be thought of as the desired row, and the second index is used for the desired
+        column. Just like 1D arrays, 2D arrays are indexed starting at 0. \n \n
+
+        <b>Initializer Lists</b> \n
+        In Java, initializer lists can be used to quickly give initial values to 2D arrays.
+        This can be done in two different ways.\n
+        1. If the array has not been declared yet, a new array can be declared and initialized in
+        the same step using curly brackets.\n
+        2. If the array has already been declared, the new keyword along with the data type must be
+        used in order to use an initializer list \n \n
+
+        <b>Modify 2D Array Elements</b> \n
+        In Java, elements in a 2D array can be modified in a similar fashion to modifying elements
+        in a 1D array. Setting arr[i][j] equal to a new value will modify the element in row
+        i column j of the array arr. \n \n
+
+        <b>Row-Major Order</b> \n
+        “Row-major order” refers to an ordering of 2D array elements where traversal occurs across
+        each row - from the top left corner to the bottom right. In Java, row major ordering can
+        be implemented by having nested loops where the outer loop variable iterates through the
+        rows and the inner loop variable iterates through the columns. Note that inside these loops,
+        when accessing elements, the variable used in the outer loop will be used as the first
+        index, and the inner loop variable will be used as the second index. \n \n
+
+        <b>Column-Major Order</b> \n
+        “Column-major order” refers to an ordering of 2D array elements where traversal occurs down
+        each column - from the top left corner to the bottom right. In Java, column major ordering
+        can be implemented by having nested loops where the outer loop variable iterates through the
+        columns and the inner loop variable iterates through the rows. Note that inside these loops,
+        when accessing elements, the variable used in the outer loop will be used as the second
+        index, and the inner loop variable will be used as the first index. \n \n
+
+        <b>Traversing With Enhanced For Loops</b> \n
+        In Java, enhanced for loops can be used to traverse 2D arrays. Because enhanced for loops
+        have no index variable, they are better used in situations where you only care about the
+        values of the 2D array - not the location of those values \n \n \n
+
+        Source: Codecademy
+
+
+
+    </string>
+</resources>
