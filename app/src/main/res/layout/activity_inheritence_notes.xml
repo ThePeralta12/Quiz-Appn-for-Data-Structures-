@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@color/purplelight"
         android:padding="10dp"
-        android:text="Inheritence Notes"
+        android:text="Inheritance Notes"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="@android:color/white"
         android:textStyle="bold"
