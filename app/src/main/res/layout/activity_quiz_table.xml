@@ -63,8 +63,8 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="5sp"
                     android:background="#ffffff"
-                    android:text="Complexity Analysis "
-                    android:textSize="10dp" />
+                    android:text="Interview Tips"
+                    android:textSize="18sp" />
                 <Button
 
                     android:id="@+id/button3"
@@ -73,6 +73,7 @@
                     android:layout_margin="5sp"
                     android:background="#ffffff"
                     android:text="Array"
+                    android:onClick="array"
                     android:textSize="18sp" />
                 <Button
 
@@ -82,6 +83,7 @@
                     android:layout_margin="5sp"
                     android:background="#ffffff"
                     android:text="Linked List"
+                    android:onClick="linkedlist"
                     android:textSize="18sp" />
                 <Button
 
@@ -91,6 +93,7 @@
                     android:layout_margin="5sp"
                     android:background="#ffffff"
                     android:text="HashMap/Hashtable"
+                    android:onClick="hashmap"
                     android:textSize="10sp" />
                 <Button
 

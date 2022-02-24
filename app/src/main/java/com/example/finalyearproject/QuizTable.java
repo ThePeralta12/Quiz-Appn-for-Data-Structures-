@@ -61,4 +61,19 @@ public class QuizTable extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),BigOQuiz.class));
         finish();
     }
+
+    public void array(View view) {
+        startActivity(new Intent(getApplicationContext(),ArrayQuiz.class));
+        finish();
+    }
+
+    public void linkedlist(View view) {
+        startActivity(new Intent(getApplicationContext(),LinkedListQuiz.class));
+        finish();
+    }
+
+    public void hashmap(View view) {
+        startActivity(new Intent(getApplicationContext(),HashMapQuiz.class));
+        finish();
+    }
 }

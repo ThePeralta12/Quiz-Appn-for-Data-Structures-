@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalYearProject">
         <activity
+            android:name=".HashMapQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".LinkedListQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".ArrayQuiz"
+            android:exported="false" />
+        <activity
             android:name=".BigOScore"
             android:exported="false" />
         <activity
