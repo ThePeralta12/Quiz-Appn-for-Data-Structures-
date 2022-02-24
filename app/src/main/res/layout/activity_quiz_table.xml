@@ -54,6 +54,7 @@
                     android:layout_margin="5sp"
                     android:background="#ffffff"
                     android:text="Big O "
+                    android:onClick="bigo"
                     android:textSize="18sp" />
                 <Button
 

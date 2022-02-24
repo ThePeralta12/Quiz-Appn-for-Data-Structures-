@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalYearProject">
         <activity
+            android:name=".BigOScore"
+            android:exported="false" />
+        <activity
             android:name=".BigOQuiz"
             android:exported="false" />
         <activity
