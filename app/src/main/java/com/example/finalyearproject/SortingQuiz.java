@@ -17,7 +17,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinkedListQuiz extends AppCompatActivity implements View.OnClickListener{
+public class SortingQuiz extends AppCompatActivity implements View.OnClickListener{
 
     private TextView question, qCount;
     private Button option1, option2, option3, option4;
@@ -28,7 +28,7 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linked_list_quiz);
+        setContentView(R.layout.activity_sorting_quiz);
 
         question = findViewById(R.id.questionbar);
         qCount = findViewById(R.id.questionnum);
@@ -52,11 +52,11 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
-        questionList.add(new BigOQuestion("A linear collection of data elements where the linear node is given by means of pointer is called?", "Linked list"," Node list", "Primitive list","Unordered list",1));
-        questionList.add(new BigOQuestion(" In Linked List implementation, a node carries information regarding ___________", "Data","Link", "Data and Link","Node",3));
-        questionList.add(new BigOQuestion("Linked list data structure offers considerable saving in _____________", "Computational Time","Space Utilization", "Space Utilization and Computational Time","Speed Utilization",3));
-        questionList.add(new BigOQuestion("Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?", "Insertion Sort","Quick Sort", "Heap Sort","Merge Sort",4));
-        questionList.add(new BigOQuestion("Linked lists are not suitable for the implementation of ___________", "Insertion sort","adix sort", "Polynomial manipulation","Binary search",4));
+        questionList.add(new BigOQuestion("What is an external sorting algorithm?", "Algorithm that uses tape or disk during the sort","Algorithm that uses main memory during the sort", " Algorithm that involves swapping","Algorithm that are considered ‘in place’",1));
+        questionList.add(new BigOQuestion("What is an internal sorting algorithm?", "Algorithm that uses tape or disk during the sort","Algorithm that uses main memory during the sort", "Algorithm that involves swapping","Algorithm that are considered ‘in place’",2));
+        questionList.add(new BigOQuestion("Which of the following algorithm implementations is similar to that of an insertion sort?", "Binary heap","Quick sort", "Merge sort","Radix sort",1));
+        questionList.add(new BigOQuestion("Merge sort uses which of the following technique to implement sorting?", "backtracking","greedy algorithm", "divide and conquer","dynamic programming",3));
+        questionList.add(new BigOQuestion("In the following scenarios, when will you use selection sort?", "The input is already sorted"," A large file has to be sorted", "Large values need to be sorted with small keys","Small values need to be sorted with large keys",3));
 
         setQuestion();
 

@@ -28,7 +28,7 @@ public class ArrayQuiz extends AppCompatActivity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_big_oquiz);
+        setContentView(R.layout.activity_array_quiz);
 
         question = findViewById(R.id.questionbar);
         qCount = findViewById(R.id.questionnum);
@@ -52,11 +52,13 @@ public class ArrayQuiz extends AppCompatActivity implements View.OnClickListener
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
-        questionList.add(new BigOQuestion("Question 1", "A","B", "C","D",3));
-        questionList.add(new BigOQuestion("Question 2", "D","C", "B","A",3));
-        questionList.add(new BigOQuestion("Question 3", "B","D", "A","C",3));
-        questionList.add(new BigOQuestion("Question 4", "C","A", "B","D",3));
-        questionList.add(new BigOQuestion("Question 5", "B","C", "A","B",3));
+
+
+        questionList.add(new BigOQuestion("Which of these best describes an array?", "A data structure that shows a hierarchical behavior","Container of objects of similar types", "Arrays are immutable once initialised","Array is not a data structure",2));
+        questionList.add(new BigOQuestion("How do you initialize an array in Java", "int arr[] = new int(3);","int arr[];", "int arr[3] = {1,2,3};","int arr(3) = (1,2,3);",3));
+        questionList.add(new BigOQuestion("Elements in an array are accessed _____________", "randomly","sequentially", "exponentially","logarithmically",1));
+        questionList.add(new BigOQuestion("What are the advantages of arrays?", "Objects of mixed data types can be stored","Elements in an array cannot be sorted", "Index of first element of an array is 1","Easier to store elements of same data type",4));
+        questionList.add(new BigOQuestion("What are the disadvantages of arrays?", "Data structure like queue or stack cannot be implemented","chances of wastage of memory space", "Index value of an array can be negative","Elements are sequentially accessed",2));
 
         setQuestion();
 

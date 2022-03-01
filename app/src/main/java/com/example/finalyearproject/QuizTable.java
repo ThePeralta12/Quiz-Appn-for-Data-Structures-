@@ -76,4 +76,39 @@ public class QuizTable extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),HashMapQuiz.class));
         finish();
     }
+
+    public void stackq(View view) {
+        startActivity(new Intent(getApplicationContext(),StacksQueueQuiz.class));
+        finish();
+    }
+
+    public void string(View view) {
+        startActivity(new Intent(getApplicationContext(),StringQuiz.class));
+        finish();
+    }
+
+    public void binary(View view) {
+        startActivity(new Intent(getApplicationContext(),BinaryTreeQuiz.class));
+        finish();
+    }
+
+    public void recursion(View view) {
+        startActivity(new Intent(getApplicationContext(),RecursionQuiz.class));
+        finish();
+    }
+
+    public void inheritance(View view) {
+        startActivity(new Intent(getApplicationContext(),InheritanceQuiz.class));
+        finish();
+    }
+
+    public void sorting(View view) {
+        startActivity(new Intent(getApplicationContext(),SortingQuiz.class));
+        finish();
+    }
+
+//    public void revision(View view) {
+//        startActivity(new Intent(getApplicationContext(),RevisionQuiz.class));
+//        finish();
+//    }
 }

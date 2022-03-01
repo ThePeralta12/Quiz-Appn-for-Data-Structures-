@@ -17,7 +17,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinkedListQuiz extends AppCompatActivity implements View.OnClickListener{
+public class RevisionQuiz extends AppCompatActivity implements View.OnClickListener{
 
     private TextView question, qCount;
     private Button option1, option2, option3, option4;
@@ -28,7 +28,7 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linked_list_quiz);
+        setContentView(R.layout.activity_revision_quiz);
 
         question = findViewById(R.id.questionbar);
         qCount = findViewById(R.id.questionnum);
@@ -52,12 +52,17 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
-        questionList.add(new BigOQuestion("A linear collection of data elements where the linear node is given by means of pointer is called?", "Linked list"," Node list", "Primitive list","Unordered list",1));
-        questionList.add(new BigOQuestion(" In Linked List implementation, a node carries information regarding ___________", "Data","Link", "Data and Link","Node",3));
-        questionList.add(new BigOQuestion("Linked list data structure offers considerable saving in _____________", "Computational Time","Space Utilization", "Space Utilization and Computational Time","Speed Utilization",3));
-        questionList.add(new BigOQuestion("Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?", "Insertion Sort","Quick Sort", "Heap Sort","Merge Sort",4));
-        questionList.add(new BigOQuestion("Linked lists are not suitable for the implementation of ___________", "Insertion sort","adix sort", "Polynomial manipulation","Binary search",4));
 
+
+        questionList.add(new BigOQuestion("Merge sort uses which of the following technique to implement sorting?", "backtracking","greedy algorithm", "divide and conquer","dynamic programming",3));
+        questionList.add(new BigOQuestion("Given only a single array of size 10 and no other memory is available. Which of the following operation is not feasible to implement (Given only push and pop operation)?", "Push","Pop", "Enqueue","Returntop",3));
+        questionList.add(new BigOQuestion("Which of these method of class String is used to obtain length of String object?", "get()","Sizeof()", "lengthof()","length()",4));
+        questionList.add(new BigOQuestion("Recursion is similar to which of the following?", "Switch Case","Loop", "If-else","if elif else",2));
+        questionList.add(new BigOQuestion("How do you initialize an array in Java", "int arr[] = new int(3);","int arr[];", "int arr[3] = {1,2,3};","int arr(3) = (1,2,3);",3));
+        questionList.add(new BigOQuestion("Find the slowest time.", "O(nlogn)","O(n!)", "O(logn)","O(n)",3));
+        questionList.add(new BigOQuestion("A B-tree of order 4 and of height 3 will have a maximum of _______ keys.", "255","63", "127","188",1));
+        questionList.add(new BigOQuestion("Which of this keyword must be used to inherit a class?", "super","this", "extent","extends",4));
+        questionList.add(new BigOQuestion("Hash tree is generalization of ______", "Heap","Hash list", "BST","B – tree",2));
         setQuestion();
 
 

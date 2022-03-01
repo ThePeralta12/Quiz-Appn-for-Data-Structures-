@@ -17,7 +17,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinkedListQuiz extends AppCompatActivity implements View.OnClickListener{
+public class StringQuiz extends AppCompatActivity implements View.OnClickListener{
 
     private TextView question, qCount;
     private Button option1, option2, option3, option4;
@@ -28,7 +28,7 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linked_list_quiz);
+        setContentView(R.layout.activity_string_quiz);
 
         question = findViewById(R.id.questionbar);
         qCount = findViewById(R.id.questionnum);
@@ -52,11 +52,11 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
-        questionList.add(new BigOQuestion("A linear collection of data elements where the linear node is given by means of pointer is called?", "Linked list"," Node list", "Primitive list","Unordered list",1));
-        questionList.add(new BigOQuestion(" In Linked List implementation, a node carries information regarding ___________", "Data","Link", "Data and Link","Node",3));
-        questionList.add(new BigOQuestion("Linked list data structure offers considerable saving in _____________", "Computational Time","Space Utilization", "Space Utilization and Computational Time","Speed Utilization",3));
-        questionList.add(new BigOQuestion("Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?", "Insertion Sort","Quick Sort", "Heap Sort","Merge Sort",4));
-        questionList.add(new BigOQuestion("Linked lists are not suitable for the implementation of ___________", "Insertion sort","adix sort", "Polynomial manipulation","Binary search",4));
+        questionList.add(new BigOQuestion("String in Java is a _______?", "class","object", "variable","character array",1));
+        questionList.add(new BigOQuestion("Which of these method of String class is used to obtain character at specified index?", "char()","Charat()", "charat()","charAt()",4));
+        questionList.add(new BigOQuestion("Which of these method of String class can be used to test to strings for equality?", "isequal()","isequals()", "equal()","equals()",4));
+        questionList.add(new BigOQuestion("Which of the following statements are incorrect?", "String is a class","Strings in java are mutable", "Every string is an object of class String","Java defines a peer class of String, called StringBuffer, which allows string to be altered",2));
+        questionList.add(new BigOQuestion("Which of these method of class String is used to obtain length of String object?", "get()","Sizeof()", "lengthof()","length()",4));
 
         setQuestion();
 

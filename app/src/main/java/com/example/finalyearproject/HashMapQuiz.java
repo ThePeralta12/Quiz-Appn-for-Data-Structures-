@@ -28,7 +28,7 @@ public class HashMapQuiz extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_big_oquiz);
+        setContentView(R.layout.activity_hash_map_quiz);
 
         question = findViewById(R.id.questionbar);
         qCount = findViewById(R.id.questionnum);
@@ -52,11 +52,11 @@ public class HashMapQuiz extends AppCompatActivity implements View.OnClickListen
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
-        questionList.add(new BigOQuestion("Question 1", "A","B", "C","D",3));
-        questionList.add(new BigOQuestion("Question 2", "D","C", "B","A",3));
-        questionList.add(new BigOQuestion("Question 3", "B","D", "A","C",3));
-        questionList.add(new BigOQuestion("Question 4", "C","A", "B","D",3));
-        questionList.add(new BigOQuestion("Question 5", "B","C", "A","B",3));
+        questionList.add(new BigOQuestion("Hash tree is generalization of ______", "Heap","Hash list", "BST","B – tree",2));
+        questionList.add(new BigOQuestion("Which of the following is a widely used form of the hash tree?", "B+ – tree","T tree", "Tiger tree hash","Htree",3));
+        questionList.add(new BigOQuestion("Hash tree is also known as _____", "Merkle tree","T -tree", "Hash table","Bx-tree",1));
+        questionList.add(new BigOQuestion("Where is the hash tree used?", "in digital currency","in sorting of large data", "for indexing in databases","in encryption of data",1));
+        questionList.add(new BigOQuestion("Which of the following is true for a Hash tree?", "Hashing is used for sequential access","Indexing is used for direct access", "Hash tree allows only sequential access","Hashing is used for direct access",4));
 
         setQuestion();
 

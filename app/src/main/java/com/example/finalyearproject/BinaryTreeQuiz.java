@@ -17,7 +17,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinkedListQuiz extends AppCompatActivity implements View.OnClickListener{
+public class BinaryTreeQuiz extends AppCompatActivity implements View.OnClickListener{
 
     private TextView question, qCount;
     private Button option1, option2, option3, option4;
@@ -28,7 +28,7 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linked_list_quiz);
+        setContentView(R.layout.activity_binary_tree_quiz);
 
         question = findViewById(R.id.questionbar);
         qCount = findViewById(R.id.questionnum);
@@ -52,11 +52,11 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
-        questionList.add(new BigOQuestion("A linear collection of data elements where the linear node is given by means of pointer is called?", "Linked list"," Node list", "Primitive list","Unordered list",1));
-        questionList.add(new BigOQuestion(" In Linked List implementation, a node carries information regarding ___________", "Data","Link", "Data and Link","Node",3));
-        questionList.add(new BigOQuestion("Linked list data structure offers considerable saving in _____________", "Computational Time","Space Utilization", "Space Utilization and Computational Time","Speed Utilization",3));
-        questionList.add(new BigOQuestion("Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?", "Insertion Sort","Quick Sort", "Heap Sort","Merge Sort",4));
-        questionList.add(new BigOQuestion("Linked lists are not suitable for the implementation of ___________", "Insertion sort","adix sort", "Polynomial manipulation","Binary search",4));
+        questionList.add(new BigOQuestion("Which of the following is the most widely used external memory data structure?", "AVL tree","B-tree", "Red-black tree","Both AVL tree and Red-black tree",2));
+        questionList.add(new BigOQuestion("A B-tree of order 4 and of height 3 will have a maximum of _______ keys.", "255","63", "127","188",1));
+        questionList.add(new BigOQuestion("Five node splitting operations occurred when an entry is inserted into a B-tree. Then how many nodes are written?", "14","7", "11","5",3));
+        questionList.add(new BigOQuestion("What is the best case height of a B-tree of order n and which has k keys?", "logn (k+1) – 1"," nk", "logk (n+1) – 1","klogn",1));
+        questionList.add(new BigOQuestion("Which of the following is true?", "larger the order of B-tree, less frequently the split occurs","larger the order of B-tree, more frequently the split occurs", "smaller the order of B-tree, more frequently the split occurs","smaller the order of B-tree, less frequently the split occurs",3));
 
         setQuestion();
 

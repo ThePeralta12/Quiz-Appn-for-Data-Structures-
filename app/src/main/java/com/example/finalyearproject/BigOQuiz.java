@@ -52,11 +52,11 @@ public class BigOQuiz extends AppCompatActivity implements View.OnClickListener{
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
-        questionList.add(new BigOQuestion("Question 1", "A","B", "C","D",3));
-        questionList.add(new BigOQuestion("Question 2", "D","C", "B","A",3));
-        questionList.add(new BigOQuestion("Question 3", "B","D", "A","C",3));
-        questionList.add(new BigOQuestion("Question 4", "C","A", "B","D",3));
-        questionList.add(new BigOQuestion("Question 5", "B","C", "A","B",3));
+        questionList.add(new BigOQuestion("What is the time complexity of the ArrayList remove(index) method?", "O(n)","O(2n)", "O(logn)","O(n^2)",1));
+        questionList.add(new BigOQuestion("The average time complexity of Quicksort is?", "O(n)","O(n^2)", "O(2+nlogn)","O(nlogn)",4));
+        questionList.add(new BigOQuestion("Average time complexity of Merge sort is?", "O(nlogn)","O(logn)", "O(n^2)","O(n)",1));
+        questionList.add(new BigOQuestion("The average time complexity of Bubble sort is?", "O(nlogn) ","O(n)", "O(n^2)","O(2n)",3));
+        questionList.add(new BigOQuestion("Find the slowest time.", "O(nlogn)","O(n!)", "O(logn)","O(n)",3));
 
         setQuestion();
 

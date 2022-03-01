@@ -103,6 +103,7 @@
                     android:layout_margin="5sp"
                     android:background="#ffffff"
                     android:text="Stack/Queue"
+                    android:onClick="stackq"
                     android:textSize="18sp" />
                 <Button
 
@@ -112,6 +113,7 @@
                     android:layout_margin="5sp"
                     android:background="#ffffff"
                     android:text="Strings"
+                    android:onClick="string"
                     android:textSize="18sp" />
                 <Button
 
@@ -121,6 +123,7 @@
                     android:layout_margin="5sp"
                     android:background="#ffffff"
                     android:text="Binary Tree"
+                    android:onClick="binary"
                     android:textSize="18sp" />
                 <Button
 
@@ -130,6 +133,7 @@
                     android:layout_margin="5sp"
                     android:background="#ffffff"
                     android:text="Recursion"
+                    android:onClick="recursion"
                     android:textSize="18sp" />
                 <Button
 
@@ -138,7 +142,8 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="5sp"
                     android:background="#ffffff"
-                    android:text="Inheritence"
+                    android:text="Inheritance"
+                    android:onClick="inheritance"
                     android:textSize="18sp" />
                 <Button
 
@@ -147,7 +152,8 @@
                     android:layout_columnWeight="1"
                     android:layout_margin="5sp"
                     android:background="#ffffff"
-                    android:text="Sorting "
+                    android:text="Sorting"
+                    android:onClick="sorting"
                     android:textSize="18sp" />
                 <Button
 
@@ -157,6 +163,7 @@
                     android:layout_margin="5sp"
                     android:background="#ffffff"
                     android:text="Revision"
+                    android:onClick="revision"
                     android:textSize="18sp" />
 
 

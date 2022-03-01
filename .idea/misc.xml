@@ -11,9 +11,11 @@
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_big_oquiz.xml" value="0.33" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_big_oscore.xml" value="0.35643115942028986" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_binary_tree.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_binary_tree_quiz.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_hash_map_quiz.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_hash_table.xml" value="1.1" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_hash_table_notes.xml" value="0.2710820177127455" />
+        <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_inheritance_quiz.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_inheritence_notes.xml" value="0.2724458204334365" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_interview_notes.xml" value="0.22" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_linked_list_notes.xml" value="0.3061594202898551" />
@@ -26,11 +28,16 @@
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_notestable.xml" value="0.1" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_quiz_table.xml" value="0.33" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_recursion_notes.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_recursion_quiz.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_revision_quiz.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_sets.xml" value="0.4041666666666667" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_sorting_notes.xml" value="0.2522393407380867" />
+        <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_sorting_quiz.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_stacks_queue_notes.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_stacks_queue_quiz.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_string_notes.xml" value="0.2710820177127455" />
+        <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/activity_string_quiz.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/bigonotes.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/quiz_item_layout.xml" value="0.25" />
         <entry key="..\:/Users/carlp/.CS (4thyear)/FinalYearProject/app/src/main/res/layout/toolbar.xml" value="0.36666666666666664" />

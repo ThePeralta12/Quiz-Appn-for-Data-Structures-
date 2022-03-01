@@ -17,7 +17,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinkedListQuiz extends AppCompatActivity implements View.OnClickListener{
+public class InheritanceQuiz extends AppCompatActivity implements View.OnClickListener{
 
     private TextView question, qCount;
     private Button option1, option2, option3, option4;
@@ -28,7 +28,7 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linked_list_quiz);
+        setContentView(R.layout.activity_inheritance_quiz);
 
         question = findViewById(R.id.questionbar);
         qCount = findViewById(R.id.questionnum);
@@ -52,11 +52,11 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
-        questionList.add(new BigOQuestion("A linear collection of data elements where the linear node is given by means of pointer is called?", "Linked list"," Node list", "Primitive list","Unordered list",1));
-        questionList.add(new BigOQuestion(" In Linked List implementation, a node carries information regarding ___________", "Data","Link", "Data and Link","Node",3));
-        questionList.add(new BigOQuestion("Linked list data structure offers considerable saving in _____________", "Computational Time","Space Utilization", "Space Utilization and Computational Time","Speed Utilization",3));
-        questionList.add(new BigOQuestion("Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?", "Insertion Sort","Quick Sort", "Heap Sort","Merge Sort",4));
-        questionList.add(new BigOQuestion("Linked lists are not suitable for the implementation of ___________", "Insertion sort","adix sort", "Polynomial manipulation","Binary search",4));
+        questionList.add(new BigOQuestion("Which of this keyword must be used to inherit a class?", "super","this", "extent","extends",4));
+        questionList.add(new BigOQuestion("A class member declared protected becomes a member of subclass of which type?", "public member","private member", "protected member","static member",2));
+        questionList.add(new BigOQuestion("Which of these is correct way of inheriting class A by class B?", "class B + class A {}","class B inherits class A {}", "class B extends A {}","class B extends class A {}",3));
+        questionList.add(new BigOQuestion("What is subclass in java?", "A subclass is a class that extends another class","A subclass is a class declared inside a class", "Both above.","None of the above.",1));
+        questionList.add(new BigOQuestion("If class B is subclassed from class A then which is the correct syntax", "class B:A{}","class B extends A{}", "class B extends class A{}","class B implements A{}",2));
 
         setQuestion();
 

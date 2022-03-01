@@ -17,7 +17,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinkedListQuiz extends AppCompatActivity implements View.OnClickListener{
+public class RecursionQuiz extends AppCompatActivity implements View.OnClickListener{
 
     private TextView question, qCount;
     private Button option1, option2, option3, option4;
@@ -28,7 +28,7 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linked_list_quiz);
+        setContentView(R.layout.activity_recursion_quiz);
 
         question = findViewById(R.id.questionbar);
         qCount = findViewById(R.id.questionnum);
@@ -52,11 +52,11 @@ public class LinkedListQuiz extends AppCompatActivity implements View.OnClickLis
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
-        questionList.add(new BigOQuestion("A linear collection of data elements where the linear node is given by means of pointer is called?", "Linked list"," Node list", "Primitive list","Unordered list",1));
-        questionList.add(new BigOQuestion(" In Linked List implementation, a node carries information regarding ___________", "Data","Link", "Data and Link","Node",3));
-        questionList.add(new BigOQuestion("Linked list data structure offers considerable saving in _____________", "Computational Time","Space Utilization", "Space Utilization and Computational Time","Speed Utilization",3));
-        questionList.add(new BigOQuestion("Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?", "Insertion Sort","Quick Sort", "Heap Sort","Merge Sort",4));
-        questionList.add(new BigOQuestion("Linked lists are not suitable for the implementation of ___________", "Insertion sort","adix sort", "Polynomial manipulation","Binary search",4));
+        questionList.add(new BigOQuestion("Recursion is a method in which the solution of a problem depends on ____________", "Larger instances of different problems","Larger instances of the same problem", "Smaller instances of the same problem","Smaller instances of different problems",3));
+        questionList.add(new BigOQuestion("Which of the following problems can’t be solved using recursion?", "Factorial of a number","Nth fibonacci number", "Length of a string","Problems without base case",3));
+        questionList.add(new BigOQuestion("Recursion is similar to which of the following?", "Switch Case","Loop", "If-else","if elif else",2));
+        questionList.add(new BigOQuestion("In recursion, the condition for which the function will stop calling itself is ____________", "Best case","Worst case", "Base case","There is no such condition",3));
+        questionList.add(new BigOQuestion("Which of the following statements is true?", "Recursion is always better than iteration","Recursion uses more memory compared to iteration", " Recursion uses less memory compared to iteration","Iteration is always better and simpler than recursion",2));
 
         setQuestion();
 
