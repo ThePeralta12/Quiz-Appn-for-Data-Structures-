@@ -48,15 +48,20 @@ public class StringQuiz extends AppCompatActivity implements View.OnClickListene
         score = 0;
 
     }
+    public void onBackPressed(){
 
+        startActivity(new Intent(getApplicationContext(),QuizTable.class));
+        finish();
+
+    }
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
         questionList.add(new BigOQuestion("String in Java is a _______?", "class","object", "variable","character array",1));
-        questionList.add(new BigOQuestion("Which of these method of String class is used to obtain character at specified index?", "char()","Charat()", "charat()","charAt()",4));
-        questionList.add(new BigOQuestion("Which of these method of String class can be used to test to strings for equality?", "isequal()","isequals()", "equal()","equals()",4));
+        questionList.add(new BigOQuestion("Which of these operators can be used to concatenate two or more String objects", "+","+=", "&","||",1));
+        questionList.add(new BigOQuestion("Which of these class is superclass of String and StringBuffer class", "java.util","java.lang", "ArrayList","None of the above",2));
         questionList.add(new BigOQuestion("Which of the following statements are incorrect?", "String is a class","Strings in java are mutable", "Every string is an object of class String","Java defines a peer class of String, called StringBuffer, which allows string to be altered",2));
-        questionList.add(new BigOQuestion("Which of these method of class String is used to obtain length of String object?", "get()","Sizeof()", "lengthof()","length()",4));
+        questionList.add(new BigOQuestion("Which of these is an incorrect statement", "String objects are immutable","String object can point to some other reference of String variable", "StringBuffer class is used to store string in a buffer for late use","None of the above",3));
 
         setQuestion();
 

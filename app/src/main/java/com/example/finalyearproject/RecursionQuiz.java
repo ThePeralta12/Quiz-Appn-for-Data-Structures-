@@ -48,7 +48,12 @@ public class RecursionQuiz extends AppCompatActivity implements View.OnClickList
         score = 0;
 
     }
+    public void onBackPressed(){
 
+        startActivity(new Intent(getApplicationContext(),QuizTable.class));
+        finish();
+
+    }
     private void getQuestionList(){
         questionList = new ArrayList<>();
 

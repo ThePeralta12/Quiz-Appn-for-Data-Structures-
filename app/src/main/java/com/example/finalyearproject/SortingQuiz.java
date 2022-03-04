@@ -48,7 +48,12 @@ public class SortingQuiz extends AppCompatActivity implements View.OnClickListen
         score = 0;
 
     }
+    public void onBackPressed(){
 
+        startActivity(new Intent(getApplicationContext(),QuizTable.class));
+        finish();
+
+    }
     private void getQuestionList(){
         questionList = new ArrayList<>();
 

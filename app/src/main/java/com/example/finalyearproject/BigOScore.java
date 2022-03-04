@@ -35,4 +35,10 @@ public class BigOScore extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),QuizTable.class));
         finish();
     }
+
+    public void notesmenu(View view) {
+
+        startActivity(new Intent(getApplicationContext(),NotesTable.class));
+        finish();
+    }
 }

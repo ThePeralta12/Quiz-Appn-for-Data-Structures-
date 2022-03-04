@@ -69,4 +69,10 @@ public class NotesTable extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),MulitiDimensionalArray.class));
         finish();
     }
+    public void onBackPressed(){
+
+        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+        finish();
+
+    }
 }

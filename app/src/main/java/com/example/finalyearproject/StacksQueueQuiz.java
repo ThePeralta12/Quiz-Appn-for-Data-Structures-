@@ -48,11 +48,16 @@ public class StacksQueueQuiz extends AppCompatActivity implements View.OnClickLi
         score = 0;
 
     }
+    public void onBackPressed(){
 
+        startActivity(new Intent(getApplicationContext(),QuizTable.class));
+        finish();
+
+    }
     private void getQuestionList(){
         questionList = new ArrayList<>();
 
-        questionList.add(new BigOQuestion("QGiven only a single array of size 10 and no other memory is available. Which of the following operation is not feasible to implement (Given only push and pop operation)?", "Push","Pop", "Enqueue","Returntop",3));
+        questionList.add(new BigOQuestion("Given only a single array of size 10 and no other memory is available. Which of the following operation is not feasible to implement (Given only push and pop operation)?", "Push","Pop", "Enqueue","Returntop",3));
         questionList.add(new BigOQuestion("Why is implementation of stack operations on queues not feasible for a large dataset (Asssume the number of elements in the stack to be n)?", "Because of its time complexity O(n)","Because of its time complexity O(log(n))", "Extra memory is not required","There are no problems",1));
         questionList.add(new BigOQuestion("Which one of the following is an application of Queue Data Structure?", "When a resource is shared among multiple consumers.","When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes", "Load Balancing","All of the above",4));
         questionList.add(new BigOQuestion("How many stacks are needed to implement a queue. Consider the situation where no other data structure like arrays, linked list is available to you.", "1","2", "3","4",2));

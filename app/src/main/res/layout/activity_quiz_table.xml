@@ -64,6 +64,7 @@
                     android:layout_margin="5sp"
                     android:background="#ffffff"
                     android:text="Interview Tips"
+                    android:onClick="twodeearray"
                     android:textSize="18sp" />
                 <Button
 

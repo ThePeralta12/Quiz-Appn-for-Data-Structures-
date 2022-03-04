@@ -107,8 +107,21 @@ public class QuizTable extends AppCompatActivity {
         finish();
     }
 
-//    public void revision(View view) {
-//        startActivity(new Intent(getApplicationContext(),RevisionQuiz.class));
-//        finish();
-//    }
+    public void revision(View view) {
+        startActivity(new Intent(getApplicationContext(),RevisionQuiz.class));
+        finish();
+
+    }
+
+    public void twodeearray(View view) {
+        startActivity(new Intent(getApplicationContext(),InterviewNotes.class));
+        finish();
+    }
+
+    public void onBackPressed(){
+
+        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+        finish();
+
+    }
 }

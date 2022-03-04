@@ -66,10 +66,10 @@
             android:id="@+id/option1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:padding="16dp"
             android:elevation="3dp"
-            android:textStyle="bold"
+            android:textStyle="normal"
             android:layout_marginBottom="40dp"
             android:text="Option 1" />
 
@@ -77,8 +77,8 @@
             android:id="@+id/option2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textStyle="normal"
             android:padding="16dp"
             android:layout_marginBottom="40dp"
             android:elevation="3dp"
@@ -91,19 +91,19 @@
             android:text="Option 3"
             android:elevation="3dp"
             android:padding="16dp"
-            android:textStyle="bold"
+            android:textStyle="normal"
             android:layout_marginBottom="40dp"
-            android:textSize="18sp"
+            android:textSize="14sp"
             />
 
         <Button
             android:id="@+id/option4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:padding="16dp"
             android:elevation="3dp"
-            android:textStyle="bold"
+            android:textStyle="normal"
             android:text="Option 4" />
     </LinearLayout>
 
