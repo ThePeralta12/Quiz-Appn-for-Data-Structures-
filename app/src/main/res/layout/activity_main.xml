@@ -12,21 +12,26 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World! This is a test"
+        android:text="Roadblock of Data Structure and Algorithm"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
+        app:layout_constraintVertical_bias="0.137" />
 
     <Button
 
         android:id="@+id/quizbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="233dp"
+        android:layout_height="160dp"
         android:layout_margin="16dp"
         android:onClick="quiz"
         android:text="Quiz"
+        android:textColor="@color/white"
+        android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,12 +41,13 @@
     <Button
 
         android:id="@+id/notesbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="233dp"
+        android:layout_height="160dp"
         android:layout_margin="16dp"
         android:layout_marginTop="40dp"
         android:onClick="notes"
         android:text="Notes"
+        android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
 
@@ -51,12 +57,13 @@
     <Button
 
         android:id="@+id/logoutbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="309dp"
+        android:layout_height="100dp"
         android:layout_margin="16dp"
         android:layout_marginTop="16dp"
         android:onClick="logout"
         android:text="Logout"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
 

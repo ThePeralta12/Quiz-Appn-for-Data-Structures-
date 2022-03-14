@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+
+
+
     <string name="app_name">Quiz Application</string>
     <string name="big_o_notes_string">Big O Notes</string>
     <string name="bigonote">

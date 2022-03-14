@@ -98,4 +98,11 @@ public class SignUp extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),Login.class));
         finish();
     }
+
+    public void onBackPressed(){
+
+        startActivity(new Intent(getApplicationContext(),Login.class));
+        finish();
+
+    }
 }
